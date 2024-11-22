@@ -1,0 +1,23 @@
+{
+  "name": "landing1",
+  "version": "1.0.0",
+  "description": "landing",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tailwindcss -i ./input.css -o ./css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7Alina77/landing1.git"
+  },
+  "author": "Alina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/7Alina77/landing1/issues"
+  },
+  "homepage": "https://github.com/7Alina77/landing1#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.15"
+  }
+}

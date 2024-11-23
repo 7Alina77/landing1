@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="font-montserrat bg-white">
   <!-- Header -->
@@ -23,30 +23,32 @@
   </header>
   <!-- Hero Section -->
   <main class="max-w-7xl mx-auto">
-    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
-      <div class="max-w-lg">
-        <h1 class="text-black font-bold text-h1">
+    <div class="relative container mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div class="w-full md:w-1/2">
+        <h1 class="text-black font-bold text-h1 mt-162">
           Hey, I’m Nick
         </h1>
-        <h2 class="text-darkGrey text-text20 font-normal">
+        <h2 class="text-darkGrey text-text20 font-normal mb-92">
           Frontend developer
         </h2>
-        <div class="flex flex-col ">
-          <div class="w-8 h-1 bg-lavender"></div>
+        <div class="flex flex-col mb-60 max-w-md">
+          <div class="w-25 h-1 bg-lavender mb-6"></div>
           <p class="text-darkGrey font-normal text-text20">
             Help you to create high-quality digital products that your clients will love and let your business thrive
           </p>
         </div>
-        <button type="button" class="bg-lavender px-25 py-13 text-white rounded-lg shadow-md font-semibold text-text16 inline-flex items-center hover:bg-purple-700 transition">
+        <button type="button" class="bg-lavender px-25 py-13 text-white rounded-50 font-semibold text-text16 inline-flex items-center hover:bg-buttonHover transition">
           <p class="mr-3">Get in touch</p>
           <img alt="arrow" src="./images/arrow.svg">
         </button>
       </div>
-      <!-- <div class="w-full md:w-1/2">
-        <div class="relative w-full gradient-bg rounded-lg overflow-hidden">
-          <img src="./images/photo-main.svg" alt="Nick" class="object-cover w-full h-full">
-        </div>
+      <!-- <div class="relative w-full md:w-1/2 h-670">
+        <div class="absolute top-0 right-0 w-full h-670 bg-cover bg-gradient clip-path-triangle rounded-lg"
+        style="clip-path: polygon(50% 0%, 100% 100%, 0% 100%); border-radius: 30px;"></div>
       </div> -->
+      <div class="bg-gradient w-full md:w-1/2 bg-no-repeat bg-cover h-670 mt-20">
+        <img src="./images/photo-main.svg" alt="Nick" class="absolute bottom-0 right-0 md:w-1/2 h-670 object-contain">
+      </div>
     </div>
   </main>
 </body>

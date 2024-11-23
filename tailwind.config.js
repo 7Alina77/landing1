@@ -10,6 +10,7 @@ module.exports = {
         'darkGrey': '#696969',
         'lightGrey': '#E5E7EB',
         'red': '#E02424',
+        'buttonHover': '#6C2BD9',
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
@@ -27,9 +28,30 @@ module.exports = {
       padding: {
         '25': '25px',
         '13': '13px',
-      }
+      },
+      borderRadius: {
+        '50': '50px',
+        'rounded-lg': '15px',
+      },
+      margin: {
+        '60': '60px',
+        '92': '92px',
+        '162': '162px',
+      },
+      width: {
+        '25': '25px',
+        '90': '90px',
+      },
+      height: {
+        '670': '670px',
+      },
+      backgroundImage: {
+        'gradient': "url('../images/gradient.svg')",
+      },
+      clipPath: {
+        triangle: 'polygon(50% 0%, 100% 100%, 0% 100%)',
+      },
     },
   },
   plugins: [],
 }
-

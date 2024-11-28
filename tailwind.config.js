@@ -3,6 +3,11 @@ module.exports = {
   content: ['./**/*.html'],
   theme: {
     extend: {
+      screens: {
+        'custom-desktop': '1365px',
+        'custom-tablet': '792px',
+        'custom-mobile': '560px',
+      },
       colors: {
         'white': '#FCFBFA',
         'black': '#27272A',
@@ -26,8 +31,12 @@ module.exports = {
         'bottom': '0px 4px 4px #E5E7EB', // Тень только снизу
       },
       padding: {
-        '25': '25px',
         '13': '13px',
+        '15': '15px',
+        '16': '16px',
+        '25': '25px',
+        '39': '39px',
+        '85': '85px',
       },
       borderRadius: {
         '50': '50px',

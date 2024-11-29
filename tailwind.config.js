@@ -3,9 +3,12 @@ module.exports = {
   content: ['./**/*.html'],
   theme: {
     extend: {
+      clipPath: {
+        full: 'inset(0)',
+      },
       screens: {
         'custom-desktop': '1365px',
-        'custom-tablet': '792px',
+        'custom-tablet': '1000px',
         'custom-mobile': '560px',
       },
       colors: {
@@ -31,6 +34,7 @@ module.exports = {
         'bottom': '0px 4px 4px #E5E7EB', // Тень только снизу
       },
       padding: {
+        '9': '9px',
         '13': '13px',
         '15': '15px',
         '16': '16px',
@@ -43,7 +47,12 @@ module.exports = {
         'rounded-lg': '15px',
       },
       margin: {
+        '10': '10px',
+        '27': '27px',
+        '38': '38px',
+        '44': '44px',
         '60': '60px',
+        '65': '65px',
         '92': '92px',
         '162': '162px',
       },
@@ -52,6 +61,10 @@ module.exports = {
         '90': '90px',
       },
       height: {
+        '345': '345px',
+        '440': '440px',
+        '485': '485px',
+        '640': '640px',
         '670': '670px',
       },
       backgroundImage: {

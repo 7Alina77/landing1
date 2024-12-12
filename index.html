@@ -26,7 +26,7 @@
     </div>
   </header>
   <main class="flex flex-col max-w-custom-desktop mx-auto">
-    <section id="main" class="mb-48 relative pl-16 custom-desktop:pl-85 custom-tablet:pl-39 custom-mobile:pl-16 container mx-auto flex flex-col md:flex-row items-center justify-between">
+    <section id="main" class="mb-48 relative pl-16 custom-desktop:pl-85 custom-tablet:pl-39 custom-mobile:pl-16 custom-mobile:mb-20 container mx-auto flex flex-col md:flex-row items-center justify-between">
       <div class="w-full md:w-1/2">
         <h1 class="text-black font-bold w-max text-2xl mt-27 custom-tablet:mt-162 custom-mobile:text-h1 custom-mobile:mt-44">
           Hey, I’m Nick
@@ -49,70 +49,71 @@
         <img src="./images/photo-main.svg" alt="Nick" class="absolute bottom-0 right-0 h-345 md:w-1/2 object-contain custom-tablet:h-670 custom-mobile:mt-0 custom-mobile:h-440">
       </div>
     </section>
-    <section id="about" class="container mx-auto px-15 flex flex-col md:flex-row items-center justify-between">
-      <h2 class="text-black font-bold text-text20 mb-36">About me</h2>
-      <img class="w-290 h-290 mb-36" src="./images/photoOfNick2.svg" alt="photo-of-Nick">
-      <div class="mx-auto flex flex-col mb-48">
-        <div class="w-25 h-1 bg-lavender mb-24"></div>
-        <p class="text-darkGrey text-sm custom-mobile:mb-16"><strong class="text-black">Nick Richardson</strong> - specialist in Frontend development. Clear code is my passion. Solving issues through negotiations</p>
-        <button type="button" class="max-w-fit hidden bg-lavender py-9 px-13 custom-mobile:flex custom-mobile:px-25 custom-mobile:py-13 text-white rounded-50 font-semibold text-sm inline-flex items-center hover:bg-buttonHover transition">
-          <p class="mr-3">Get in touch</p>
-          <img alt="arrow" src="./images/arrow.svg">
-        </button>
+    <section id="about" class="container mx-auto px-15 flex flex-col items-center justify-between custom-mobile:items-start custom-mobile:justify-start">
+      <h2 class="text-black font-bold text-text20 mb-36 custom-mobile:text-h2 custom-mobile:mb-20">About me</h2>
+      <div class="flex flex-col items-center custom-mobile:items-center custom-mobile:flex-row">
+        <img class="w-290 h-290 mb-36 custom-mobile:mb-16 custom-mobile:mr-11" src="./images/photoOfNick2.svg" alt="photo-of-Nick">
+        <div class="mx-auto flex flex-col mb-48 custom-mobile:mb-0">
+          <div class="w-25 h-1 bg-lavender mb-24"></div>
+          <p class="text-darkGrey text-sm custom-mobile:text-xl custom-mobile:mb-11"><strong class="text-black">Nick Richardson</strong> - specialist in Frontend development. Clear code is my passion. Solving issues through negotiations</p>
+          <button type="button" class="max-w-fit hidden bg-lavender py-9 px-13 custom-mobile:text-base custom-mobile:flex custom-mobile:px-25 custom-mobile:py-13 text-white rounded-50 font-semibold text-sm inline-flex items-center hover:bg-buttonHover transition">
+            <p class="mr-3">Get in touch</p>
+            <img alt="arrow" src="./images/arrow.svg">
+          </button>
+        </div>
       </div>
-      <div class="mx-auto w-screen">
-        <div class="mx-auto flex flex-col mb-48">
-          <h3 class="text-black text-text20 font-bold mb-7">Interests</h3>
+      <div class="mx-auto flex flex-col custom-mobile:mx-0">
+        <div class="flex flex-col mb-48 custom-mobile:mb-20">
+          <h3 class="text-black text-text20 font-bold mb-7 custom-mobile:text-2xl custom-mobile:mb-11">Interests</h3>
           <div class="flex flex-row mb-24">
-            <img class="w-44 h-44 mr-2" src="/images/music.svg" alt="music-icon">
+            <img class="w-44 h-44 mr-2 custom-mobile:w-60 custom-mobile:h-60 custom-mobile:mr-4" src="./images/music.svg" alt="music-icon">
             <div class="flex flex-col justify-between">
-              <h4 class="text-black font-bold text-sm">Music</h4>
-              <p class="text-black text-sm">Indie rock | Reggae</p>
+              <h4 class="text-black font-bold text-sm custom-mobile:text-xl">Music</h4>
+              <p class="text-black text-sm custom-mobile:text-xl">Indie rock | Reggae</p>
             </div>
           </div>
           <div class="flex flex-row mb-24">
-            <img class="w-44 h-44 mr-2" src="/images/art.svg" alt="music-icon">
+            <img class="w-44 h-44 mr-2 custom-mobile:w-60 custom-mobile:h-60 custom-mobile:mr-4" src="./images/art.svg" alt="music-icon">
             <div class="flex flex-col justify-between">
-              <h4 class="text-black font-bold text-sm">Art</h4>
-              <p class="text-black text-sm">Edvard Munch | Frida Kahlo</p>
+              <h4 class="text-black font-bold text-sm custom-mobile:text-xl">Art</h4>
+              <p class="text-black text-sm custom-mobile:text-xl">Edvard Munch | Frida Kahlo</p>
             </div>
           </div>
           <div class="flex flex-row">
-            <img class="w-44 h-44 mr-2" src="/images/photo.svg" alt="music-icon">
+            <img class="w-44 h-44 mr-2 custom-mobile:w-60 custom-mobile:h-60 custom-mobile:mr-4" src="./images/photo.svg" alt="music-icon">
             <div class="flex flex-col justify-between">
-              <h4 class="text-black font-bold text-sm">Photography</h4>
-              <p class="text-black text-sm">Portraits</p>
+              <h4 class="text-black font-bold text-sm custom-mobile:text-xl">Photography</h4>
+              <p class="text-black text-sm custom-mobile:text-xl">Portraits</p>
             </div>
           </div>
         </div>
-        <div>
-          <h3 class="text-black text-text20 font-bold mb-7">Education & Experience</h3>
+        <div class="mb-48">
+          <h3 class="text-black text-text20 font-bold mb-7 custom-mobile:text-2xl custom-mobile:mb-11">Education & Experience</h3>
           <div class="flex flex-row mb-3">
-            <p class="min-w-[120px] flex-shrink-0 text-black text-sm">2008 - Present</p>
+            <p class="min-w-[120px] flex-shrink-0 text-black text-sm custom-mobile:text-xl custom-mobile:min-w-40">2008 - Present</p>
             <div>
-              <h4 class="text-black font-bold text-sm mb-2">Middle Frontend developer</h4>
-              <p class="text-black text-sm">Ozon</p>
+              <h4 class="text-black font-bold text-sm mb-2 custom-mobile:text-xl">Middle Frontend developer</h4>
+              <p class="text-black text-sm custom-mobile:text-xl">Ozon</p>
             </div>
           </div>
           <div class="w-full h-px bg-lightGrey mb-3"></div>
           <div class="flex flex-row mb-3">
-            <p class="min-w-[120px] flex-shrink-0 text-black text-sm">2006 - 2007</p>
+            <p class="min-w-[120px] flex-shrink-0 text-black text-sm custom-mobile:text-xl custom-mobile:min-w-40">2006 - 2007</p>
             <div>
-              <h4 class="text-black font-bold text-sm mb-2">Junior Frontend developer</h4>
-              <p class="text-black text-sm">Facebook</p>
+              <h4 class="text-black font-bold text-sm mb-2 custom-mobile:text-xl">Junior Frontend developer</h4>
+              <p class="text-black text-sm custom-mobile:text-xl">Facebook</p>
             </div>
           </div>
           <div class="w-full h-px bg-lightGrey mb-3"></div>
           <div class="flex flex-row mb-3">
-            <p class="min-w-[120px] flex-shrink-0 text-black text-sm">2000 - 2005</p>
+            <p class="min-w-[120px] flex-shrink-0 text-black text-sm custom-mobile:text-xl custom-mobile:min-w-40">2000 - 2005</p>
             <div>
-              <h4 class="text-black font-bold text-sm mb-2">Frontend developer</h4>
-              <p class="text-black text-sm">Stanford University</p>
+              <h4 class="text-black font-bold text-sm mb-2 custom-mobile:text-xl">Frontend developer</h4>
+              <p class="text-black text-sm custom-mobile:text-xl">Stanford University</p>
             </div>
           </div>
-          <div class="w-full h-px bg-lightGrey mb-48"></div>
         </div>
-        <button type="button" class="mb-100 custom-mobile:hidden bg-lavender py-9 px-13 text-white rounded-50 font-semibold text-sm inline-flex items-center hover:bg-buttonHover transition">
+        <button type="button" class="max-w-fit mb-100 custom-mobile:hidden bg-lavender py-9 px-13 text-white rounded-50 font-semibold text-sm inline-flex items-center hover:bg-buttonHover transition">
           <p class="mr-3">Get in touch</p>
           <img alt="arrow" src="./images/arrow.svg">
         </button>

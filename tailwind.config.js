@@ -7,7 +7,7 @@ module.exports = {
         full: 'inset(0)',
       },
       screens: {
-        'custom-desktop': '1365px',
+        'custom-desktop': '1280px',
         'custom-tablet': '1000px',
         'custom-mobile': '560px',
       },
@@ -66,12 +66,14 @@ module.exports = {
         '60': '60px',
         '90': '90px',
         '290': '290px',
+        '412': '412px',
       },
       height: {
         '44': '44px',
         '60': '60px',
         '290': '290px',
         '345': '345px',
+        '412': '412px',
         '440': '440px',
         '485': '485px',
         '640': '640px',

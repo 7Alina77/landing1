@@ -15,6 +15,7 @@ module.exports = {
         'white': '#FCFBFA',
         'black': '#27272A',
         'lavender': '#7E3AF2',
+        'activeLavender': '#CABFFD',
         'darkGrey': '#696969',
         'lightGrey': '#E5E7EB',
         'red': '#E02424',
@@ -24,11 +25,10 @@ module.exports = {
         montserrat: ['Montserrat', 'sans-serif'],
       },
       fontSize: {
-        'h1': ['60px', { lineHeight: '1.5' }],
         'h2': ['32px', { lineHeight: '1.5' }],
-        'h3': ['24px', { lineHeight: '1.5' }],
-        'text20': ['20px', { lineHeight: '1.5' }],
-        'text16': ['16px', { lineHeight: '1.5' }],
+      },
+      lineHeight: {
+        '90': '90px',
       },
       boxShadow: {
         'bottom': '0px 4px 4px #E5E7EB', // Тень только снизу
@@ -81,6 +81,7 @@ module.exports = {
       },
       backgroundImage: {
         'gradient': "url('../images/gradient.svg')",
+        'gradientFull': "url('../images/gradientFull.svg')",
       },
       clipPath: {
         triangle: 'polygon(50% 0%, 100% 100%, 0% 100%)',

@@ -16,11 +16,11 @@
         <a href="#"><img src="./images/logo.svg" alt="logo"></a>
       </div>
       <nav class="hidden custom-mobile:flex space-x-6">
-        <a href="#main" class="menu-link text-lavender hover:text-lavender font-semibold transition">Main</a>
-        <a href="#about" class="menu-link text-darkGrey hover:text-lavender font-semibold transition">About</a>
-        <a href="#getInTouch" class="menu-link text-darkGrey hover:text-lavender font-semibold transition">Get in touch</a>
+        <a href="#main" class="menu-link text-lavender">Main</a>
+        <a href="#about" class="menu-link text-darkGrey">About</a>
+        <a href="#getInTouch" class="menu-link text-darkGrey">Get in touch</a>
       </nav>
-      <button class="custom-mobile:hidden text-gray-700 focus:outline-none">
+      <button class="custom-mobile:hidden focus:outline-none">
         <img src="./images/menu.svg" alt="menu-button">
       </button>
     </div>
@@ -28,10 +28,10 @@
   <main class="flex flex-col max-w-custom-desktop mx-auto">
     <section id="main" class="mb-48 relative pl-16 custom-desktop:pl-85 custom-tablet:pl-39 custom-mobile:pl-16 custom-mobile:mb-20 container mx-auto flex flex-col md:flex-row items-center justify-between">
       <div class="w-full md:w-1/2">
-        <h1 class="text-black font-bold w-max text-2xl mt-27 custom-tablet:mt-162 custom-tablet:leading-90 custom-mobile:text-6xl custom-mobile:mt-44 custom-mobile:leading-90">
+        <h1 class="title">
           Hey, I’m Nick
         </h1>
-        <h2 class="text-darkGrey text-sm custom-mobile:text-xl font-normal mb-38 custom-mobile:mb-92">
+        <h2 class="subtitleMain">
           Frontend developer
         </h2>
         <div class="flex flex-col mb-27 custom-mobile:mb-60 max-w-md">
@@ -40,7 +40,7 @@
             Help you to create high-quality digital products that your clients will love and let your business thrive
           </p>
         </div>
-        <button type="button" class="bg-lavender py-9 px-13 custom-mobile:px-25 custom-mobile:py-13 text-white rounded-50 font-semibold text-sm custom-mobile:text-base inline-flex items-center hover:bg-buttonHover focus:ring focus:ring-activeLavender transition">
+        <button type="button" class="button">
           <p class="mr-3">Get in touch</p>
           <img alt="arrow" src="./images/arrow.svg">
         </button>
@@ -54,9 +54,9 @@
       <div class="flex flex-col items-center custom-mobile:items-center custom-mobile:flex-row custom-tablet:w-full custom-tablet:justify-between">
         <img class="w-290 h-290 mb-36 custom-mobile:mb-16 custom-mobile:mr-11 custom-tablet:items-start custom-tablet:w-412 custom-tablet:h-412 custom-tablet:mr-0 custom-tablet:mb-20" src="./images/photoOfNick2.svg" alt="photo-of-Nick">
         <div class="mx-auto flex flex-col mb-48 custom-mobile:mb-0 custom-tablet:w-1/2 custom-tablet:mx-0">
-          <div class="w-25 h-1 bg-lavender mb-24"></div>
+          <div class="w-25 h-1 bg-lavender mb-6"></div>
           <p class="text-darkGrey text-sm custom-mobile:text-xl custom-mobile:mb-11"><strong class="text-black">Nick Richardson</strong> - specialist in Frontend development. Clear code is my passion. Solving issues through negotiations</p>
-          <button type="button" class="max-w-fit hidden bg-lavender py-9 px-13 custom-mobile:text-base custom-mobile:flex custom-mobile:px-25 custom-mobile:py-13 text-white rounded-50 font-semibold text-sm inline-flex items-center hover:bg-buttonHover transition">
+          <button type="button" class="max-w-fit hidden bg-lavender py-9 px-13 custom-mobile:text-base custom-mobile:flex custom-mobile:px-25 custom-mobile:py-13 text-white rounded-50 font-semibold text-sm inline-flex items-center hover:bg-buttonHover focus:ring focus:ring-activeLavender transition">
             <p class="mr-3">Get in touch</p>
             <img alt="arrow" src="./images/arrow.svg">
           </button>
@@ -64,100 +64,98 @@
       </div>
       <div class="mx-auto flex flex-col custom-mobile:mx-0 custom-tablet:w-full custom-tablet:flex-row custom-tablet:justify-between">
         <div class="flex flex-col mb-48 custom-mobile:mb-20 custom-tablet:w-1/2 custom-tablet:mb-0">
-          <h3 class="text-black text-xl font-bold mb-7 custom-mobile:text-2xl custom-mobile:mb-11">Interests</h3>
-          <div class="flex flex-row mb-24">
+          <h3 class="subtitleAbout">Interests</h3>
+          <div class="flex flex-row mb-6">
             <img class="w-44 h-44 mr-2 custom-mobile:w-60 custom-mobile:h-60 custom-mobile:mr-4" src="./images/music.svg" alt="music-icon">
             <div class="flex flex-col justify-between">
-              <h4 class="text-black font-bold text-sm custom-mobile:text-xl">Music</h4>
-              <p class="text-black text-sm custom-mobile:text-xl">Indie rock | Reggae</p>
+              <h4 class="h4">Music</h4>
+              <p class="textAbout">Indie rock | Reggae</p>
             </div>
           </div>
-          <div class="flex flex-row mb-24">
+          <div class="flex flex-row mb-6">
             <img class="w-44 h-44 mr-2 custom-mobile:w-60 custom-mobile:h-60 custom-mobile:mr-4" src="./images/art.svg" alt="music-icon">
             <div class="flex flex-col justify-between">
-              <h4 class="text-black font-bold text-sm custom-mobile:text-xl">Art</h4>
-              <p class="text-black text-sm custom-mobile:text-xl">Edvard Munch | Frida Kahlo</p>
+              <h4 class="h4">Art</h4>
+              <p class="textAbout">Edvard Munch | Frida Kahlo</p>
             </div>
           </div>
           <div class="flex flex-row">
             <img class="w-44 h-44 mr-2 custom-mobile:w-60 custom-mobile:h-60 custom-mobile:mr-4" src="./images/photo.svg" alt="music-icon">
             <div class="flex flex-col justify-between">
-              <h4 class="text-black font-bold text-sm custom-mobile:text-xl">Photography</h4>
-              <p class="text-black text-sm custom-mobile:text-xl">Portraits</p>
+              <h4 class="h4">Photography</h4>
+              <p class="textAbout">Portraits</p>
             </div>
           </div>
         </div>
         <div class="mb-48 custom-tablet:w-1/2 custom-tablet:mb-0">
-          <h3 class="text-black text-xl font-bold mb-7 custom-mobile:text-2xl custom-mobile:mb-11">Education & Experience</h3>
+          <h3 class="subtitleAbout">Education & Experience</h3>
           <div class="flex flex-row mb-3">
-            <p class="min-w-[120px] flex-shrink-0 text-black text-sm custom-mobile:text-xl custom-mobile:min-w-40">2008 - Present</p>
+            <p class="min-w-[120px] flex-shrink-0 textAbout custom-mobile:min-w-40">2008 - Present</p>
             <div>
-              <h4 class="text-black font-bold text-sm mb-2 custom-mobile:text-xl">Middle Frontend developer</h4>
-              <p class="text-black text-sm custom-mobile:text-xl">Ozon</p>
+              <h4 class="h4 mb-2">Middle Frontend developer</h4>
+              <p class="textAbout">Ozon</p>
             </div>
           </div>
           <div class="w-full h-px bg-lightGrey mb-3"></div>
           <div class="flex flex-row mb-3">
-            <p class="min-w-[120px] flex-shrink-0 text-black text-sm custom-mobile:text-xl custom-mobile:min-w-40">2006 - 2007</p>
+            <p class="min-w-[120px] flex-shrink-0 textAbout custom-mobile:min-w-40">2006 - 2007</p>
             <div>
-              <h4 class="text-black font-bold text-sm mb-2 custom-mobile:text-xl">Junior Frontend developer</h4>
-              <p class="text-black text-sm custom-mobile:text-xl">Facebook</p>
+              <h4 class="h4 mb-2">Junior Frontend developer</h4>
+              <p class="textAbout">Facebook</p>
             </div>
           </div>
           <div class="w-full h-px bg-lightGrey mb-3"></div>
           <div class="flex flex-row mb-3">
-            <p class="min-w-[120px] flex-shrink-0 text-black text-sm custom-mobile:text-xl custom-mobile:min-w-40">2000 - 2005</p>
+            <p class="min-w-[120px] flex-shrink-0 textAbout custom-mobile:min-w-40">2000 - 2005</p>
             <div>
-              <h4 class="text-black font-bold text-sm mb-2 custom-mobile:text-xl">Frontend developer</h4>
-              <p class="text-black text-sm custom-mobile:text-xl">Stanford University</p>
+              <h4 class="h4 mb-2">Frontend developer</h4>
+              <p class="textAbout">Stanford University</p>
             </div>
           </div>
         </div>
-        <button type="button" class="max-w-fit mb-100 custom-mobile:hidden bg-lavender py-9 px-13 text-white rounded-50 font-semibold text-sm inline-flex items-center hover:bg-buttonHover transition">
+        <button type="button" class="max-w-fit mb-100 custom-mobile:hidden button">
           <p class="mr-3">Get in touch</p>
           <img alt="arrow" src="./images/arrow.svg">
         </button>
       </div>
     </section>
     <section id="getInTouch" class="flex items-center justify-center bg-gradientFull bg-no-repeat bg-cover">
-      <div class="bg-white rounded-lg shadow-lg py-12 px-5 max-w-[764px] w-full my-16 mx-2.5 custom-mobile:px-8 custom-mobile:my-70 custom-mobile:mx-10 custom-tablet:px-12">
+      <div class="formBackground">
         <h2 class="text-xl font-semibold text-black mb-9 custom-mobile:text-h2 custom-mobile:mb-12 custom-mobile:font-bold">Let’s discuss your project</h2>
         <!-- Форма -->
         <form class="h-fit" onsubmit="return validateForm(event)">
           <div class="custom-mobile:flex">
             <!-- Поле для полного имени -->
             <div class="custom-mobile:mr-6 custom-mobile:w-1/2">
-              <label for="full-name" class="block text-sm font-semibold text-black mb-2 custom-mobile:text-base">
+              <label for="full-name" class="label">
                 Your full name <span class="text-red">*</span>
               </label>
               <div class="relative flex flex-col w-full">
-                <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                <span class="absolute spanImg">
                   <img alt="icon-of-person" src="./images/person.svg">
                 </span>
-                <input id="full-name" type="text" placeholder="Name Surname"
-                  class="py-3 px-5 block w-full pl-10 pr-4 py-2 border rounded-2xl shadow-sm hover:border-lavender focus:outline-none focus:ring-1 focus:ring-lavender focus:border-lavender invalid:border-red invalid:text-red text-sm text-darkGrey border-lightGrey">
+                <input id="full-name" type="text" placeholder="Name Surname" class="input">
               </div>
               <p class="mb-1 w-full text-xs text-red mt-1 invisible min-h-[20px] custom-mobile:mb-4" id="name-error">Please fill this mandatory field</p>
             </div>
           
             <!-- Поле для email -->
             <div class="custom-mobile:w-1/2">
-              <label for="email" class="block text-sm font-semibold text-black mb-2 custom-mobile:text-base">
+              <label for="email" class="label">
                 Your email <span class="text-red">*</span>
               </label>
               <div class="relative flex flex-col w-full">
-                <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                <span class="absolute spanImg">
                   <img alt="icon-of-mail" src="./images/mail.svg">
                 </span>
-                <input id="email" type="email" placeholder="name@example.com"
-                  class="py-3 px-5 block w-full pl-10 pr-4 py-2 border rounded-2xl shadow-sm hover:border-lavender focus:outline-none focus:ring-1 focus:ring-lavender focus:border-lavender invalid:border-red invalid:text-red text-sm text-darkGrey border-lightGrey">
+                <input id="email" type="email" placeholder="name@example.com" class="input">
               </div>
               <p class="text-xs text-red mt-1 invisible min-h-[20px] custom-mobile:mb-4" id="email-error">Please fill this mandatory field</p>
             </div>
           </div>
           <!-- Поле для описания проекта -->
           <div class="mb-9 custom-mobile:mb-12">
-            <label for="project-description" class="block text-sm font-semibold text-black mb-2 custom-mobile:text-base">
+            <label for="project-description" class="label">
               Tell me about your project
             </label>
             <textarea id="project-description" placeholder="Add here a general description of your idea and target aim"
@@ -165,7 +163,7 @@
           </div>        
     
           <!-- Кнопка отправки -->
-          <button type="submit" class="max-w-fit bg-lavender py-9 px-13 text-white rounded-50 font-semibold text-sm inline-flex items-center hover:bg-buttonHover custom-mobile:text-base transition">
+          <button type="submit" class="max-w-fit button">
             <p class="mr-3">Submit</p>
             <img alt="arrow" src="./images/arrow.svg">
           </button>

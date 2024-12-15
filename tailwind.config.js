@@ -47,7 +47,6 @@ module.exports = {
         'rounded-lg': '15px',
       },
       margin: {
-        '24': '24px',
         '27': '27px',
         '36': '36px',
         '38': '38px',

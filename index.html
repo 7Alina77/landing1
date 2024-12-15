@@ -120,51 +120,52 @@
       </div>
     </section>
     <section id="getInTouch" class="flex items-center justify-center bg-gradientFull bg-no-repeat bg-cover">
-      <div class="bg-white rounded-lg shadow-lg py-12 px-5 max-w-lg w-full my-16 mx-2.5">
-        <h2 class="text-xl font-semibold text-black mb-9">Let’s discuss your project</h2>
+      <div class="bg-white rounded-lg shadow-lg py-12 px-5 max-w-[764px] w-full my-16 mx-2.5 custom-mobile:px-8 custom-mobile:my-70 custom-mobile:mx-10 custom-tablet:px-12">
+        <h2 class="text-xl font-semibold text-black mb-9 custom-mobile:text-h2 custom-mobile:mb-12 custom-mobile:font-bold">Let’s discuss your project</h2>
         <!-- Форма -->
         <form class="h-fit" onsubmit="return validateForm(event)">
-          <!-- Поле для полного имени -->
-          <div>
-            <label for="full-name" class="block text-sm font-semibold text-black mb-2">
-              Your full name <span class="text-red">*</span>
-            </label>
-            <div class="relative flex flex-col w-full">
-              <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
-                <img alt="icon-of-person" src="./images/person.svg">
-              </span>
-              <input id="full-name" type="text" placeholder="Name Surname"
-                class="py-3 px-5 block w-full pl-10 pr-4 py-2 border rounded-2xl shadow-sm hover:border-lavender focus:outline-none focus:ring-1 focus:ring-lavender focus:border-lavender invalid:border-red invalid:text-red text-sm text-darkGrey border-darkGrey">
+          <div class="custom-mobile:flex">
+            <!-- Поле для полного имени -->
+            <div class="custom-mobile:mr-6 custom-mobile:w-1/2">
+              <label for="full-name" class="block text-sm font-semibold text-black mb-2 custom-mobile:text-base">
+                Your full name <span class="text-red">*</span>
+              </label>
+              <div class="relative flex flex-col w-full">
+                <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                  <img alt="icon-of-person" src="./images/person.svg">
+                </span>
+                <input id="full-name" type="text" placeholder="Name Surname"
+                  class="py-3 px-5 block w-full pl-10 pr-4 py-2 border rounded-2xl shadow-sm hover:border-lavender focus:outline-none focus:ring-1 focus:ring-lavender focus:border-lavender invalid:border-red invalid:text-red text-sm text-darkGrey border-lightGrey">
+              </div>
+              <p class="mb-1 w-full text-xs text-red mt-1 invisible min-h-[20px] custom-mobile:mb-4" id="name-error">Please fill this mandatory field</p>
             </div>
-            <p class="mb-1 w-full text-xs text-red mt-1 invisible min-h-[20px]" id="name-error">Please fill this mandatory field</p>
-          </div>
-        
-          <!-- Поле для email -->
-          <div>
-            <label for="email" class="block text-sm font-semibold text-black mb-2">
-              Your email <span class="text-red">*</span>
-            </label>
-            <div class="relative flex flex-col w-full">
-              <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
-                <img alt="icon-of-mail" src="./images/mail.svg">
-              </span>
-              <input id="email" type="email" placeholder="name@example.com"
-                class="py-3 px-5 block w-full pl-10 pr-4 py-2 border rounded-2xl shadow-sm hover:border-lavender focus:outline-none focus:ring-1 focus:ring-lavender focus:border-lavender invalid:border-red invalid:text-red text-sm text-darkGrey border-darkGrey">
+          
+            <!-- Поле для email -->
+            <div class="custom-mobile:w-1/2">
+              <label for="email" class="block text-sm font-semibold text-black mb-2 custom-mobile:text-base">
+                Your email <span class="text-red">*</span>
+              </label>
+              <div class="relative flex flex-col w-full">
+                <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                  <img alt="icon-of-mail" src="./images/mail.svg">
+                </span>
+                <input id="email" type="email" placeholder="name@example.com"
+                  class="py-3 px-5 block w-full pl-10 pr-4 py-2 border rounded-2xl shadow-sm hover:border-lavender focus:outline-none focus:ring-1 focus:ring-lavender focus:border-lavender invalid:border-red invalid:text-red text-sm text-darkGrey border-lightGrey">
+              </div>
+              <p class="text-xs text-red mt-1 invisible min-h-[20px] custom-mobile:mb-4" id="email-error">Please fill this mandatory field</p>
             </div>
-            <p class="text-xs text-red mt-1 invisible min-h-[20px]" id="email-error">Please fill this mandatory field</p>
           </div>
-        
           <!-- Поле для описания проекта -->
-          <div class="mb-9">
-            <label for="project-description" class="block text-sm font-semibold text-black mb-2">
+          <div class="mb-9 custom-mobile:mb-12">
+            <label for="project-description" class="block text-sm font-semibold text-black mb-2 custom-mobile:text-base">
               Tell me about your project
             </label>
             <textarea id="project-description" placeholder="Add here a general description of your idea and target aim"
-              class="block w-full py-3 px-5 border rounded-lg shadow-sm text-sm hover:border-lavender focus:outline-none focus:ring-1 focus:ring-lavender focus:border-lavender invalid:border-red invalid:text-red text-darkGrey border-darkGrey resize-none h-24"></textarea>
+              class="block w-full py-3 px-5 border rounded-2xl shadow-sm text-sm hover:border-lavender focus:outline-none focus:ring-1 focus:ring-lavender focus:border-lavender invalid:border-red invalid:text-red text-darkGrey border-lightGrey resize-none h-24"></textarea>
           </div>        
     
           <!-- Кнопка отправки -->
-          <button type="submit" class="max-w-fit bg-lavender py-9 px-13 text-white rounded-50 font-semibold text-sm inline-flex items-center hover:bg-buttonHover transition">
+          <button type="submit" class="max-w-fit bg-lavender py-9 px-13 text-white rounded-50 font-semibold text-sm inline-flex items-center hover:bg-buttonHover custom-mobile:text-base transition">
             <p class="mr-3">Submit</p>
             <img alt="arrow" src="./images/arrow.svg">
           </button>
@@ -172,5 +173,8 @@
       </div>   
     </section>
   </main>
+  <footer class="my-5 mx-4 max-w-custom-desktop custom-mobile:my-7 custom-mobile:mx-12 custom-tablet:mx-85">
+    <p class="text-sm font-normal text-darkGrey custom-mobile:text-base">&copy 2022 JetRuby. All Rights Reserved</p>
+  </footer>
 </body>
 </html>

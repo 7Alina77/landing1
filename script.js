@@ -2,9 +2,16 @@ function validateForm(event) {
   event.preventDefault();
   let isValid = true;
 
+  const inputValues = {
+    fullName: null,
+    email: null,
+    aboutProject: null,
+  };
+
   // Validate Full Name
   const nameInput = document.getElementById('full-name');
   const nameError = document.getElementById('name-error');
+
   if (!nameInput.value.trim()) {
     nameError.classList.remove('invisible');
     nameInput.classList.add('border-red');
@@ -26,10 +33,16 @@ function validateForm(event) {
     emailInput.classList.remove('border-red');
   }
 
+  // AboutProject
+  const aboutProjectInput = document.getElementById('project-description');
+
   if (isValid) {
     console.log('Form submitted successfully!');
-    // Proceed with form submission logic
+    inputValues.fullName = nameInput.value;
+    inputValues.email = emailInput.value;
+    inputValues.aboutProject = aboutProjectInput.value;
+    console.log(inputValues);
   } else {
-    console.log('Error');
+    console.log('Error in form');
   }
 }

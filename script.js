@@ -1,3 +1,25 @@
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
+const closeMenu = document.getElementById("close-menu");
+const menuLinks = document.querySelectorAll('#mobile-menu a');
+
+// Открыть меню
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.remove("-translate-x-full");
+});
+
+// Закрыть меню
+closeMenu.addEventListener("click", () => {
+  mobileMenu.classList.add("-translate-x-full");
+});
+
+// Закрыть меню при клике на пункт меню
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.add('-translate-x-full');
+  });
+});
+
 function validateForm(event) {
   event.preventDefault();
   let isValid = true;

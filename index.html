@@ -20,9 +20,18 @@
         <a href="#about" class="menu-link text-darkGrey">About</a>
         <a href="#getInTouch" class="menu-link text-darkGrey">Get in touch</a>
       </nav>
-      <button class="custom-mobile:hidden focus:outline-none">
+      <button id="menu-toggle" class="custom-mobile:hidden focus:outline-none">
         <img src="./images/menu.svg" alt="menu-button">
       </button>
+
+      <div id="mobile-menu" class="fixed inset-0 bg-white bg-opacity-95 flex flex-col items-end justify-center pr-2.5 z-40 transform -translate-x-full transition-transform duration-300">
+        <a href="#main" class="mt-3.5 menu-link text-darkGrey text-2xl">Main</a>
+        <a href="#about" class="mt-3.5 menu-link text-darkGrey text-2xl">About</a>
+        <a href="#getInTouch" class="mt-3.5 menu-link text-darkGrey text-2xl">Get in touch</a>
+        <button id="close-menu" class="absolute top-4 right-2 w-8 h-8">
+          <img src="./images/close-icon.jpg" alt="close-button" />
+        </button>
+      </div>
     </div>
   </header>
   <main class="flex flex-col max-w-custom-desktop mx-auto">

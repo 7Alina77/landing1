@@ -33,8 +33,17 @@ function validateForm(event) {
   // Validate Full Name
   const nameInput = document.getElementById('full-name');
   const nameError = document.getElementById('name-error');
+  const nameValue = nameInput.value.trim();
 
-  if (!nameInput.value.trim()) {
+  if (!nameValue) {
+    nameError.classList.remove('invisible');
+    nameInput.classList.add('border-red');
+    isValid = false;
+  } else if (nameValue.length < 3) {
+    nameError.classList.remove('invisible');
+    nameInput.classList.add('border-red');
+    isValid = false;
+  } else if (nameValue.length > 15) {
     nameError.classList.remove('invisible');
     nameInput.classList.add('border-red');
     isValid = false;
@@ -46,6 +55,7 @@ function validateForm(event) {
   // Validate Email
   const emailInput = document.getElementById('email');
   const emailError = document.getElementById('email-error');
+
   if (!emailInput.value.trim() || !emailInput.value.includes('@')) {
     emailError.classList.remove('invisible');
     emailInput.classList.add('border-red');

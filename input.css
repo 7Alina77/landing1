@@ -43,5 +43,9 @@
 }
 
 .input {
-  @apply py-3 px-5 block w-full pl-10 pr-4 py-2 border rounded-2xl shadow-sm text-sm hover:border-lavender focus:outline-none focus:ring-1 focus:ring-lavender focus:border-lavender text-darkGrey border-lightGrey;
+  @apply py-3 px-5 block w-full pl-10 pr-4 border rounded-2xl shadow-sm text-sm hover:border-lavender focus:outline-none focus:ring-1 focus:ring-lavender focus:border-lavender invalid:border-red text-darkGrey border-lightGrey;
+}
+
+.input.border-red {
+  @apply border-red ring-0 focus:border-red focus:ring-0; 
 }

@@ -16,4 +16,4 @@ https://www.figma.com/file/B2T8GvmXHNlihHJlKwFw6W/Test.-Landing-page?node-id=29:
 
 ### `npm start`
 
-Собирает стили tailwind для отображения.
+Для запуска проекта. После запустите лайв-сервер

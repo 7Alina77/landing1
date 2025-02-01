@@ -2,6 +2,14 @@ const menuToggle = document.getElementById("menu-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
 const closeMenu = document.getElementById("close-menu");
 const menuLinks = document.querySelectorAll('#mobile-menu a');
+const getInTouch = document.getElementById('getInTouch');
+
+//якорь по кнопке на секцию с формой
+function scrollToSection() {
+  getInTouch.scrollIntoView({
+    behavior: 'smooth'
+  });
+}
 
 // Открыть меню
 menuToggle.addEventListener("click", () => {

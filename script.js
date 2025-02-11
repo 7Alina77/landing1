@@ -3,6 +3,9 @@ const mobileMenu = document.getElementById("mobile-menu");
 const closeMenu = document.getElementById("close-menu");
 const menuLinks = document.querySelectorAll('#mobile-menu a');
 const getInTouch = document.getElementById('getInTouch');
+const nameInput = document.getElementById('full-name');
+const emailInput = document.getElementById('email');
+const aboutProjectInput = document.getElementById('project-description');
 
 //якорь по кнопке на секцию с формой
 function scrollToSection() {
@@ -39,7 +42,6 @@ function validateForm(event) {
   };
 
   // Validate Full Name
-  const nameInput = document.getElementById('full-name');
   const nameError = document.getElementById('name-error');
   const nameValue = nameInput.value.trim();
 
@@ -61,7 +63,6 @@ function validateForm(event) {
   }
 
   // Validate Email
-  const emailInput = document.getElementById('email');
   const emailError = document.getElementById('email-error');
 
   if (!emailInput.value.trim() || !emailInput.value.includes('@')) {
@@ -74,15 +75,25 @@ function validateForm(event) {
   }
 
   // AboutProject
-  const aboutProjectInput = document.getElementById('project-description');
-
   if (isValid) {
-    console.log('Form submitted successfully!');
-    inputValues.fullName = nameInput.value;
-    inputValues.email = emailInput.value;
-    inputValues.aboutProject = aboutProjectInput.value;
-    console.log(inputValues);
+    submitForm(event)
   } else {
     console.log('Error in form');
   }
+}
+
+function submitForm(event) {
+  event.preventDefault();
+
+  const inputValues = {
+    fullName: nameInput.value.trim(),
+    email: emailInput.value.trim(),
+    aboutProject: aboutProjectInput.value.trim(),
+  };
+
+  nameInput.value = '';
+  emailInput.value = '';
+  aboutProjectInput.value = '';
+
+  console.log('Form submitted successfully!', inputValues);
 }
